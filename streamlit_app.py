@@ -31,14 +31,14 @@ try:
        back_from_function=get_fruityvice(fruit_choice)
        streamlit.dataframe(back_from_function)
 except URLError as e: 
-        streamlit.error(("please select the fruit to get information.")
+        streamlit.error(()
 
 
 #stop while we remoing error
-import streamlit
-import pandas
-import requests
-import snowflake.connector
+#import streamlit
+#import pandas
+#import requests
+#import snowflake.connector
 from urllib.error import URLError
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
