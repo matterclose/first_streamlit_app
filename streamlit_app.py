@@ -32,7 +32,7 @@ streamlit.dataframe(fruityvice_normalized)
 streamlit.stop()
 import streamlit
 import pandas
-import request
+import requests
 import snowflake.connector
 from urllib.error import URLError
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
