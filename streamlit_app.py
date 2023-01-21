@@ -29,7 +29,6 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # output it to screen as table
 streamlit.dataframe(fruityvice_normalized)
 #stop while we remoing error
-streamlit.stop()
 import streamlit
 import pandas
 import requests
