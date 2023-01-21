@@ -35,6 +35,7 @@ except URLError as e:
 
 
 #stop while we remoing error
+streamlit.stop()
 import streamlit
 import pandas
 import requests
