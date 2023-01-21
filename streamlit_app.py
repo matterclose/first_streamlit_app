@@ -20,10 +20,8 @@ def get_fruityvice_data(this_fruit_choice):
     fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + this_fruit_choice)
     fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
     return (fruityvice_normalized)
-except URLError as e: 
-streamlit.error()
-   
 
+#new section to display fuityvice api response
 streamlit.header("Fruityvice Fruit Advice!")
 try:
    fruit_choice = streamlit.text_input('What fruit would you like information about?')
